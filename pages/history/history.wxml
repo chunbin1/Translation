@@ -1,0 +1,4 @@
+<view class='container page-index'>
+ <navigator url='../index/index'>跳转到index页面</navigator>
+ <navigator url='../logs/logs'>跳转到logs界面 </navigator>
+</view>

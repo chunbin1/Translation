@@ -1,0 +1,28 @@
+{
+  "usingComponents": {},
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false,
+    "tabBar": {
+      "list": [
+        {
+          "pagePath": "../index/index",
+          "text": "跳转到index",
+          "iconPath": "iconPath",
+          "selectedIconPath": "selectedIconPath"
+        },
+        {
+          "pagePath": "../history/history",
+          "text": "跳转到history",
+          "iconPath": "iconPath",
+          "selectedIconPath": "selectedIconPath"
+        }
+      ]
+    }
+  }
+ 
+}
