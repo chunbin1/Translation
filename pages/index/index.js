@@ -17,6 +17,12 @@ Page({
       this.setData({query:options.query})
     }
   },
+  onShow:function(){
+    if(this.data.curLang.lang!==app.globalData.curLang.lang){
+      this.setData({curLang:app.globalData.curLang})
+      this.onConfirm()
+    }
+  },
   onInput:function(e){
     this.setData({'query':e.detail.value})
     if(this.data.query.length>0){
@@ -34,10 +40,16 @@ Page({
     translate(this.data.query, { from: 'auto', to: this.data.curLang.lang}).then(res=>{
       this.setData({ 'result': res.trans_result})
 
-      // let history = wx.getStorageSync('history')||[]
-      // history.unshift({query:this.data.query, result:res.trans_result[0].dst})
-      // history.length = history.length>10?10:history.length
-      // wx.setStorageSync('history', history)
+      let history= wx.getStorageSync('history')||[]
+      console.log(history)
+      history.unshift({query:this.data.query, result:res.trans_result[0].dst})
+      history.length = history.length>10?10:history.length
+      try{
+        wx.setStorageSync('history',history )
+      }catch(e){
+        console.log(e)
+      }
+      
     })
   }
 })

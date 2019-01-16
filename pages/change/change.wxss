@@ -1,1 +1,35 @@
 /* pages/change/change.wxss */
+@import "../../assets/iconfont/iconfont.wxss";
+.icon-check{
+  position: absolute;
+  right: 20rpx;
+  height: '20px'
+  }
+
+.item {
+  padding-left: 40rpx;
+  background-color: #fff;
+}
+
+.container {
+  background: #f8f8f8;
+}
+.lang-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  padding: 20rpx 40rpx;
+  color: #aaa;
+  font-size: 28rpx;
+}
+
+.item-inner {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ececec;
+  padding:  20rpx 40rpx 20rpx 0;
+}

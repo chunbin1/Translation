@@ -2,7 +2,7 @@
 <view class='container'>
   <view class='change'>
     <navigator url='/pages/change/change' hover-class='navigator-hover'>
-      <text>转为英文</text>
+       <text>到{{curLang.chs}}</text>
       <text class="iconfont icon-down"></text>
     </navigator>
   </view>
@@ -23,4 +23,5 @@
 
   <view class='copyright'>
    Lee@2018的最后一天</view>
+
 </view>

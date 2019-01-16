@@ -2,7 +2,6 @@
 const util = require('../../utils/util.js')
 const app = getApp()
 Page({
-  
   data: {
     curLang:{},
     langList:app.globalData.langList
@@ -22,5 +21,4 @@ Page({
       url: '/pages/index/index',
     })
   }
- 
 })
