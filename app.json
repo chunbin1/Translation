@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/history/history",
     "pages/logs/logs",
-    "pages/change/change"
+    "pages/change/change",
+    "pages/people/people"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,8 +13,11 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "position": "top",
-    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "backgroundColor": "#fefefe",
+    "color": "#333",
+    "selectedColor": "#42a9f4",
+    "borderStyle": "#333",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -22,6 +26,10 @@
       {
         "pagePath": "pages/history/history",
         "text": "历史记录"
+      },
+      {
+        "pagePath":"pages/people/people",
+        "text":"个人信息"
       }
     ]
   }
