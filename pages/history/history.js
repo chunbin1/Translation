@@ -20,7 +20,10 @@ Page({
     // this.setData({ history: wx.getStorageSync('history') }) 
     //同步写法
   },
-  onTapItem:function(){
-    
+  onTapItem: function (e) {
+    console.log(e)
+    wx.reLaunch({
+      url: `/pages/index/index?query=${e.currentTarget.dataset.query}`
+    })
   }
 })
