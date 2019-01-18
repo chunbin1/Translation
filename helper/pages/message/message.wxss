@@ -1,0 +1,3 @@
+/* pages/message/message.wxss */.button-hover {
+  background-color: red;
+}

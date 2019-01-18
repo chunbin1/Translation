@@ -4,7 +4,8 @@
     "pages/history/history",
     "pages/logs/logs",
     "pages/change/change",
-    "pages/people/people"
+    "pages/people/people",
+    "pages/message/message"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,8 +29,8 @@
         "text": "历史记录"
       },
       {
-        "pagePath":"pages/people/people",
-        "text":"个人信息"
+        "pagePath": "pages/people/people",
+        "text": "个人信息"
       }
     ]
   }
