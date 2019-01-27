@@ -2,6 +2,7 @@
 
 <view class="container">
   <view class='userinfo'>
+  <!-- open-data 可以获取用户信息 -->
     <view class='user-avatar'>
       <open-data type="userAvatarUrl"></open-data>
     </view>
@@ -20,7 +21,8 @@
  <view class='message'>
     <navigator url="../message/message" open-type="navigate" class="uploader-text">
       <icon class='iconfont icon-message-circle'></icon>
-      <text>欢迎留言      <button open-type='getUserInfo' bindgetuserinfo="onGotUserInfo" hover-class="none" plain="{{plain}}"></button></text>
+      <text>欢迎留言</text>
+       <button open-type='getUserInfo' bindgetuserinfo="onGotUserInfo" hover-class="none" plain="{{true}}"></button>
     </navigator>
   </view>
   <view class='about'>

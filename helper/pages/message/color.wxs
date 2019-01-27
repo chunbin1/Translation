@@ -1,0 +1,7 @@
+function randomIndex(length){
+  return Math.floor(Math.random()*length)
+}
+
+module.exports={
+  randomIndex:randomIndex
+}

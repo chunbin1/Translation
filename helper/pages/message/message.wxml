@@ -1,8 +1,26 @@
 <!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<!-- <text>pages/message/message.wxml</text>
 <open-data type="userAvatarUrl"></open-data>
 <open-data type="userNickName"></open-data>
 @
-<open-data type='userCity'></open-data>
-<button size='mini' bindtap='logE'>来按一下一个button</button>
-<view wx:for="{{msg}}" wx:key="{{index}}"></view>
+<open-data type='userCity'></open-data> -->
+<wxs src='./color.wxs' module="tools"></wxs>
+<button open-type='getUserInfo' bindgetuserinfo="onGotUserInfo" hover-class="none" plain="{{true}}">
+  测试用获取用户数据</button>
+<view class='input-control'>
+  <input class="input" placeholder='感谢留言～' value='{{inputData}}' bindinput='inputNewMsg' focus="{{true}}"></input>
+  <button size='mini' bindtap='addMessage'>发表</button>
+</view>
+<view>
+  <scroll-view bindscrolltolower="onScrollBottom" scroll-y="true" class='list' bindscroll="onScroll">
+    <view class='msg' wx:for="{{msg}}" wx:key="{{index}}" style="background-color:{{myColor[tools.randomIndex(13)]}}" data-time="{{item.time}}" data-id="{{item._id}}" data-name="{{item.name}}" data-index="{{index}}" bindlongpress='onDeleteMsg'>
+      <view class='msg-header'>
+        <!-- <text>'{{tools.randomIndex(13)}}'</text> -->
+        <image src='{{item.avatar}}'></image>
+        <text>{{item.name}}</text>
+        <text class='tac'>{{item.time}} {{item.city}}</text>
+      </view>
+      <view class='msg-content'>{{item.content}}</view>
+    </view>
+  </scroll-view>
+</view>

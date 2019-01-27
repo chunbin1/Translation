@@ -1,4 +1,5 @@
 // pages/people/people.js
+const app = getApp()
 Page({
 
   /**
@@ -9,7 +10,17 @@ Page({
   },
 
   onGotUserInfo:function(e){
-    console.log(e)
+    console.log('ongotUserInfo',e)
+    let detail = e.detail.userInfo;
+    this.setData({
+      userInfo: {
+        name: detail.nickName,
+        avatar: detail.avatarUrl,
+        city:detail.city
+      }
+    })
+    app.globalData.userInfo = this.data.userInfo;
+    console.log(app.globalData.userInfo)
   },
 
   /**

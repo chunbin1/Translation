@@ -1,3 +1,50 @@
-/* pages/message/message.wxss */.button-hover {
-  background-color: red;
+/* pages/message/message.wxss */
+.button-hover {
+  background-color: #99ccff;
+  color: #ffffff;
+}
+.input-control{
+  display: flex;
+  align-items: center;
+}
+.input{
+  margin-left: 50rpx;
+  border: 1rpx solid black;
+  width: 500rpx;
+  padding-left: 30rpx;
+}
+
+.list{
+  height: 1200rpx;
+}
+
+.msg{
+  position: relative;
+  margin: 34rpx 34rpx;
+  padding: 20rpx 20rpx;
+  border: 1rpx solid black;
+  border-radius: 32rpx;
+  word-break: break-all;
+}
+
+.msg-header{
+  position: relative;
+}
+/* time和city */
+.tac{
+  /* float: right; */
+  position: absolute;
+  color: grey;
+  font-size: 80%;
+  bottom: 0;
+  right: 0
+}
+
+.msg-header>image{
+  /* position: absolute;
+  left: 0rpx; */
+  height: 75rpx;
+  width: 75rpx;
+  border-radius: 50%;
+  margin-right:30rpx
 }

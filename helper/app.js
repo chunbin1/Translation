@@ -44,5 +44,11 @@ App({
         "index": 6
       }
     ]
+  },
+  show:function(that,param,opacity){
+    let animation = wx.createAnimation({
+      //持续800s
+    })
   }
+
 })
