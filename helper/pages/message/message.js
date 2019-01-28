@@ -26,8 +26,8 @@ Page({
   },
   onScrollBottom:function(e){
     console.log(e)
-    const newData =this.fakeData(5)
-    this.setData({msg:[...this.data.msg,...newData]})
+    // const newData =this.fakeData(5)
+    // this.setData({msg:[...this.data.msg,...newData]})
   },
   onScroll:function(e){
 

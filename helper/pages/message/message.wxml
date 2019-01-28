@@ -1,12 +1,8 @@
 <!--pages/message/message.wxml-->
-<!-- <text>pages/message/message.wxml</text>
-<open-data type="userAvatarUrl"></open-data>
-<open-data type="userNickName"></open-data>
-@
-<open-data type='userCity'></open-data> -->
+<!-- 用来随机产生背景 -->
 <wxs src='./color.wxs' module="tools"></wxs>
-<button open-type='getUserInfo' bindgetuserinfo="onGotUserInfo" hover-class="none" plain="{{true}}">
-  测试用获取用户数据</button>
+<!-- <button open-type='getUserInfo' bindgetuserinfo="onGotUserInfo" hover-class="none" plain="{{true}}">
+  测试用获取用户数据</button> -->
 <view class='input-control'>
   <input class="input" placeholder='感谢留言～' value='{{inputData}}' bindinput='inputNewMsg' focus="{{true}}"></input>
   <button size='mini' bindtap='addMessage'>发表</button>
