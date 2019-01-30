@@ -16,12 +16,13 @@
 
   <view class='text-area'>
     <view class='text-title'>译文</view>
+    <text class='iconfont icon-fuzhi' hidden="{{hideCopyBtn}}" bindtap='onTapCopy'></text>
     <view class='text-result' wx:for='{{result}}' wx:key="index">
-      <text selectable='true'>{{item.dst}}</text>
+      <text selectable='true'>{{item}}</text>
     </view>
   </view>
 
-  <view class='copyright'>
-   Lee@2018的最后一天</view>
+  <!-- <view class='copyright'>
+   Lee@2018的最后一天</view> -->
 
 </view>

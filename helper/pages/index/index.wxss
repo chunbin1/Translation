@@ -1,5 +1,6 @@
 @import "../../assets/iconfont/iconfont.wxss";
-.container{
+
+.container {
   padding: 0;
 }
 
@@ -9,7 +10,7 @@
   color: #8995a1;
   font-size: 30rpx;
   padding: 20rpx 40rpx;
-  background-color:#f5fafe;
+  background-color: #f5fafe;
 }
 
 .change .icon-down {
@@ -17,7 +18,7 @@
   font-size: 20rpx;
 }
 
-.navigator-hover{
+.navigator-hover {
   background-color: blue;
 }
 
@@ -42,6 +43,7 @@
   background: #fff;
   border-bottom: 1px solid #c7cee0;
 }
+
 .input-area textarea {
   background-color: #fff;
   padding: 30rpx 0 30rpx 30rpx;
@@ -49,6 +51,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 .input-area .icon-cancel {
   position: absolute;
   right: 12rpx;
@@ -83,4 +86,16 @@
   padding: 20rpx 0;
 }
 
+.text-area{
+    position: relative;
+}
+
+.icon-fuzhi {
+  position: absolute;
+  right: 12rpx;
+  top: 20rpx;
+  /* z-index: 100; */
+  font-size: 40rpx;
+  color: #888;
+}
 
