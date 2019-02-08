@@ -13,6 +13,10 @@ Page({
     result: [],
     curLang: {},
     hideCopyBtn: true,
+    isVoice:false,
+    voiceObj:{},
+    speakUrl:"",
+    tSpeakUrl:""
   },
   onLoad: function(options) {
     console.log('loaded..')
@@ -46,6 +50,32 @@ Page({
     }
     console.log('focus')
   },
+  onTapVoice:function(){
+    if(this.data.isVoice===true){
+     this.data.voiceObj.stop()
+     return
+    }
+    this.setData({isVoice:!this.data.isVoice})
+    if(this.data.voiceObj.src===this.data.tSpeakUrl){
+      this.data.voiceObj.play()
+      return
+    }
+    let voice = wx.createInnerAudioContext()
+    voice.src = this.data.tSpeakUrl
+    voice.onPlay(()=>{
+      console.log('播放了')
+    })
+    voice.onStop(()=>{
+      console.log("暂停咯")
+      this.setData({ isVoice: !this.data.isVoice })
+    })
+    voice.onEnded(()=>{
+      console.log("播放完毕")
+      this.setData({ isVoice: !this.data.isVoice })      
+    })
+    this.setData({voiceObj:voice})
+    voice.play()
+  },
   onTapClose: function() {
     this.setData({
       'hideClearIcon': true,
@@ -77,9 +107,16 @@ Page({
       to: this.data.curLang.lang
     }).then(res => {
       console.log("indexres", res)
+      let {
+        speakUrl,
+        tSpeakUrl
+      } = res;
       this.setData({
         'result': res.translation,
-        'hideCopyBtn': false
+        'hideCopyBtn': false,
+        'isVoice':false,
+        speakUrl,
+        tSpeakUrl
       })
 
       let history = wx.getStorageSync('history') || []
@@ -94,7 +131,6 @@ Page({
       } catch (e) {
         console.log(e)
       }
-
     })
   }
 })

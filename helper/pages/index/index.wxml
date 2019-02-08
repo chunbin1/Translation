@@ -14,9 +14,11 @@
     </view>
   </view>
 
+  <view class='text-title'>译文</view>
   <view class='text-area'>
-    <view class='text-title'>译文</view>
     <text class='iconfont icon-fuzhi' hidden="{{hideCopyBtn}}" bindtap='onTapCopy'></text>
+    <text class='iconfont icon-bofang1' hidden="{{hideCopyBtn||isVoice}}" bindtap='onTapVoice'></text>
+    <text class='iconfont icon-stop' hidden="{{hideCopyBtn||!isVoice}}" bindtap='onTapVoice'></text>
     <view class='text-result' wx:for='{{result}}' wx:key="index">
       <text selectable='true'>{{item}}</text>
     </view>

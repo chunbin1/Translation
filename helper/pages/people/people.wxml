@@ -13,12 +13,12 @@
       <open-data type='userCity'></open-data>
     </view>
   </view>
-  <view class='favorite'>
+  <!-- <view class='favorite'>
     <navigator url="../favorite/favorite" open-type="switchTab" class="uploader-text">
       <text class='iconfont icon-shoucang'></text>
       <text>查看收藏</text>
     </navigator>
-  </view>
+  </view> -->
   <view class='message'>
     <navigator url="../message/message" open-type="navigate" class="uploader-text">
       <text class='iconfont icon-liuyan'></text>

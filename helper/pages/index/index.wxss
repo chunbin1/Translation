@@ -67,23 +67,22 @@
   background-color: #fff;
 }
 
-.text-area .text-title {
-  font-size: 28rpx;
+.text-title {
+  font-size: 30rpx;
   color: #8995a1;
+  background-color: #f5fafe;
+  padding: 20rpx 40rpx;
 }
 
 .text-area .text-result {
-  padding: 20rpx 0;
+  padding: 0 40rpx;
+  padding-top:70rpx;
 }
 
 .text-area .text-title {
   font-size: 30rpx;
   color: #8995a1;
   padding: 20rpx;
-}
-
-.text-area .text-result {
-  padding: 20rpx 0;
 }
 
 .text-area{
@@ -94,8 +93,22 @@
   position: absolute;
   right: 12rpx;
   top: 20rpx;
-  /* z-index: 100; */
   font-size: 40rpx;
   color: #888;
 }
 
+.icon-bofang1{
+  position: absolute;
+  right: 64rpx;
+  top: 20rpx;
+  font-size: 40rpx;
+  color: #888;
+}
+
+.icon-stop{
+  position: absolute;
+  right: 64rpx;
+  top: 20rpx;
+  font-size: 40rpx;
+  color: #888;
+}

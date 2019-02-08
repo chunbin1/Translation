@@ -1,0 +1,18 @@
+/* helper/pages/about/about.wxss */
+.tittle{
+  font-size: 1em;
+  text-align: center;
+}
+.date{
+  font-size: 2em;
+}
+.myPay{
+  display: block;
+  margin: 0 auto;
+  height: 750rpx;
+}
+
+.help{
+  width: 375rpx;
+  margin:40rpx auto;
+}

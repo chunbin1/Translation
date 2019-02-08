@@ -1,0 +1,9 @@
+<!--helper/pages/about/about.wxml-->
+<view class='tittle'>
+  <text >在家耕田的第<text class='date'>{{myDate}}天</text></text>
+</view>
+ <!-- <image class='myPay' mode='aspectFit' src='../../assets/images/myMoney.jpeg' 
+ data-src='https://user-images.githubusercontent.com/19233912/52264058-bb2c6880-296b-11e9-8df4-9b054554eb09.jpeg' bindtap="previewImage"></image> -->
+ <button bindtap='onHelp' class='help'>救济一下作者</button>
+ <image src="https://user-images.githubusercontent.com/19233912/52464542-384b1e00-2bb6-11e9-9bac-c7efa97dca07.jpg"></image>
+ <!-- <navigator target='miniProgram' path='pages/apps/largess/detail?id=S5RkXLhilUU%3D' app-id='wx18a2ac992306a5a4' open-type='navigate' version="release">救济作者</navigator> -->
