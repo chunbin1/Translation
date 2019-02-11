@@ -13,6 +13,7 @@ function translate(q, { from = 'auto', to = 'zh' } = { from: 'auto', to: 'zh' })
     if(to==='en'){
       to="EN"
     }
+    console.log(to)
     wx.request({
       url: 'https://openapi.youdao.com/api',
       data: {

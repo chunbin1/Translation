@@ -27,6 +27,14 @@ Page({
       })
     }
   },
+  onShareAppMessage:function(){
+    return {
+      title:'翻译小助手',
+      path:'pages/index/index',
+imageUrl:'https://user-images.githubusercontent.com/19233912/52464542-384b1e00-2bb6-11e9-9bac-c7efa97dca07.jpg'
+    }
+  }
+  ,
   onShow: function() {
     if (this.data.curLang.lang !== app.globalData.curLang.lang) {
       this.setData({

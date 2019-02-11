@@ -25,5 +25,8 @@ Page({
     wx.reLaunch({
       url: `/pages/index/index?query=${e.currentTarget.dataset.query}`
     })
+  },
+  onShareAppMessage: function () {
+
   }
 })

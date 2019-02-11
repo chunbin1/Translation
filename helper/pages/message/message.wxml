@@ -9,7 +9,7 @@
 </view>
 <view>
   <scroll-view bindscrolltolower="onScrollBottom" scroll-y="true" class='list' bindscroll="onScroll">
-    <view class='msg' wx:for="{{msg}}" wx:key="{{index}}" style="background-color:{{myColor[tools.randomIndex(13)]}}" data-time="{{item.time}}" data-id="{{item._id}}" data-name="{{item.name}}" data-index="{{index}}" bindlongpress='onDeleteMsg'>
+    <view class='msg' wx:for="{{msg}}" wx:key="{{index}}" style="background-color:{{tools.randomrgba()}}" data-time="{{item.time}}" data-id="{{item._id}}" data-name="{{item.name}}" data-index="{{index}}" bindlongpress='onDeleteMsg'>
       <view class='msg-header'>
         <!-- <text>'{{tools.randomIndex(13)}}'</text> -->
         <image src='{{item.avatar}}'></image>

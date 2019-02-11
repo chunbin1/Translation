@@ -2,6 +2,12 @@ function randomIndex(length){
   return Math.floor(Math.random()*length)
 }
 
+function randomrgba(){
+  
+  return 'rgba('+randomIndex(255)+','+randomIndex(255)+','+randomIndex(255)+',0.1)'
+}
+
 module.exports={
-  randomIndex:randomIndex
+  randomIndex:randomIndex,
+  randomrgba:randomrgba
 }

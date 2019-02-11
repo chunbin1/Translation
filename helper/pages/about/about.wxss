@@ -6,10 +6,13 @@
 .date{
   font-size: 2em;
 }
-.myPay{
-  display: block;
-  margin: 0 auto;
-  height: 750rpx;
+
+/* 简单地把所有元素对齐 */
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .help{
