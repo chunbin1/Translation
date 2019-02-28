@@ -13,7 +13,6 @@ Page({
    */
   onLoad: function (options) {
     let myLeaveDate = new Date(2019, 0, 15);
-    // myLeaveDate.setFullYear(2018,1,15)
     let myDate = new Date()
     let timeSinceLeave = parseInt((myDate-myLeaveDate)/1000/3600/24)
     this.setData({ myDate: timeSinceLeave})

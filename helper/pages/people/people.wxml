@@ -26,12 +26,20 @@
       <button open-type='getUserInfo' bindgetuserinfo="onGotUserInfo" hover-class="none" plain="{{true}}"></button>
     </navigator>
   </view>
-  <view class='about'>
+  <!-- <view class='about'>
     <navigator url="../about/about" open-type="navigate" class="uploader-text">
       <text class='iconfont icon-zuozhe'></text>
       <text>关于作者</text>
     </navigator>
+  </view> -->
+
+  <view class="help" bindtap='onHelp'>
+    <view class='navigator'>
+      <text class='iconfont icon-jitui'></text>
+      <text>给开发者加鸡腿</text>
+    </view>
   </view>
+
 
   <view class='text-bottom copyright'>
     <text>Copyright©Lee</text>
