@@ -7,7 +7,7 @@ page {
   justify-content: flex-start;
 }
 
-.userinfo, .favorite, .message, .about,.help {
+.userinfo, .favorite, .message, .about,.help, .translate {
   width: 100%;
   margin-top: 40rpx;
   height: 140rpx;

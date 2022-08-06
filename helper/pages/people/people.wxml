@@ -26,6 +26,13 @@
       <button open-type='getUserInfo' bindgetuserinfo="onGotUserInfo" hover-class="none" plain="{{true}}"></button>
     </navigator>
   </view>
+
+  <view class='translate'>
+    <navigator url="../translate/index" open-type="navigate" class="uploader-text">
+      <text class='iconfont icon-zuozhe'></text>
+      <text>翻译</text>
+    </navigator>
+  </view>
   <!-- <view class='about'>
     <navigator url="../about/about" open-type="navigate" class="uploader-text">
       <text class='iconfont icon-zuozhe'></text>
