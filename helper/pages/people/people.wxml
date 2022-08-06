@@ -33,12 +33,12 @@
     </navigator>
   </view> -->
 
-  <view class="help" bindtap='onTapHelp'>
+  <!-- <view class="help" bindtap='onTapHelp'>
     <view class='navigator'>
       <text class='iconfont icon-jitui'></text>
       <text>给开发者加鸡腿</text>
     </view>
-  </view>
+  </view> -->
 
 
   <view class='text-bottom copyright'>
