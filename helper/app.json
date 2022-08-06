@@ -2,7 +2,6 @@
   "pages": [
     "pages/people/people",
     "pages/translate/index",
-    "pages/about/message",
     "pages/history/history",
     "pages/logs/logs",
     "pages/change/change",
